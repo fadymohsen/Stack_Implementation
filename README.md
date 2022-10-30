@@ -1,4 +1,3 @@
-# Stack Implementation Using Template
 ### By Fady Mohsen
 
 
