@@ -1,11 +1,11 @@
 #include <iostream>
+#include <string>
 using namespace std;
 
 
 // START CONSTANTS
 const int maxSize = 100;
 // END CONSTANTS
-
 
 
 
@@ -54,11 +54,11 @@ public:
 
 
     // START POP FUNCTION
-    int pop (){
+    t pop (){
         if (isEmpty()){                  // Is Stack EMPTY !!!
             cout << "Error" << endl;    // Print Error
         }else{
-            int ret_Item = item[top];   // Storing Last Item
+            t ret_Item = item[top];   // Storing Last Item
             top--;                      // Decreasing Size-1
             return ret_Item;            // Printing Last Item
         }
@@ -106,17 +106,12 @@ public:
 
 
 int main() {
-    stack<char> first_Trial;
-    first_Trial.push('A');
-    first_Trial.push('B');
-    first_Trial.push('C');
-    first_Trial.push('D');
-    first_Trial.push('E');
+    stack<string> first_Trial;
+    first_Trial.push("hamada");
+    first_Trial.push("Seham");
+    first_Trial.push("Mohsen");
     first_Trial.print();
-    cout<<first_Trial.get_top()<<endl;
-
     first_Trial.pop();
-    first_Trial.push('Z');
     first_Trial.print();
 
     return 0;
